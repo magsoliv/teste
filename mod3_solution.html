@@ -6,72 +6,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Module3-Solution</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        
+    <link rel="stylesheet" href="bootstrap-3.4.1-dist\css\bootstrap.css">
+    <link rel="stylesheet" href="bootstrap-3.4.1-dist\css\bootstrap.min.css">
+    <link rel="stylesheet" href="module3-solution.css">
         
         
         </style> 
     </head>
     <body>
-    <nav class="navbar navbar-default">
-    <div class="container">
-       <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="index.html" id="top">Food,LLC</a>
-      </div>
-
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav visible-xs">      
-          <a href="#dishes1"><li id="food1"><span class="glyphicon glyphicon-star"></span> Chicken</li></a>
-          <a href="#dishes2"><li id="food2"><span class="glyphicon glyphicon-star"></span>Beef</li></a>
-          <a href="#dishes3"><li id="food3"><span class="glyphicon glyphicon-star"></span>Sushi</li></a>
-        </ul>       
-      </div><!-- /.navbar-collapse -->
-    </div>
-  </nav>
+        <header>
+            <nav id="header-nav" class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a href="index.html" class="pull-left visible-md visible-lg">
+                            <div id="logo-img" alt="Logo Image"></div>
+                        </a>
+                        <div class="navbar-brand">
+                            <a href="index.html"><h1>Food, LLC</h1></a>
+    
+                        </div>
+    
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="true">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div id="collapsable-nav" class="navbar-collapse collapse in" aria-expanded="true" style="">
+                        <ul id="nav-list" class="navbar navbar-nav navbar-right">
+                            <li id="c" class="visible-xs">
+                                <a href="#chicken">
+                                    <br> Chicken
+                                </a>
+                            </li>
+                            
+                            <li id="b" class="visible-xs">
+                                <a href="#beef">
+                                    <br> Beef
+                                </a>
+                            </li>
+                          
+                            <li id="s" class="visible-xs">
+                                <a href="#sushi">
+                                    <br> Sushi
+                                </a>
+                            </li>
+    
+                        </ul>
+                    </div>
+                   
+                </div>
+            </nav>
+        </header>
         
         <header>
      <h1 class="text-center">Our Menu</h1>
   </header>
         
-        <div class="container">
-    <div class="row">
-      <section class="col-lg-4 col-md-6 col-xs-12">        
-        <div class="content1">
-           <h3 class="text-center" id="dishes1">Chicken</h3>
-           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.   
-           <p class="visible-xs"><a href="#top"><b>Back Top</b></a></p>                
-        </div>
-      </section>
+  <div class="container">
+    <div class="bx">
+        <div id="chicken" class="chicken"><h2>Chicken</h2></div>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a elementum purus. Aenean id fermentum erat. Proin est est, cursus a velit mattis, dapibus rutrum ipsum. Donec porta nibh in diam vulputate, ac molestie sem ultricies. Etiam lacinia sodales ante, sodales pellentesque nibh feugiat sit amet. Ut venenatis diam a magna rhoncus, id finibus metus porttitor. Praesent quis metus dapibus, finibus ligula ac, ultrices ligula. Maecenas a ligula in ex pulvinar tempus. Donec a suscipit urna. Cras eget rutrum turpis. Curabitur sit amet est eu ipsum volutpat fermentum. Proin in pulvinar elit, nec auctor diam. Nam sit amet blandit purus. Maecenas aliquet eros ut ex tincidunt, nec interdum quam vulputate. Nulla gravida mauris ut odio laoreet, vitae pretium enim ultricies. Sed tincidunt aliquam dolor non ornare.
 
-       <section class="col-lg-4 col-md-6 col-xs-12">        
-        <div class="content2">
-           <h3 class="text-center" id="dishes2">Beef</h3>
-           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.   
-           <p class="visible-xs"><a href="#top"><b>Back Top</b></a></p>   
-        </div>
-      </section>
+            Vivamus placerat viverra sagittis. Suspendisse lobortis mollis mauris, ac scelerisque arcu. Etiam id lacus porttitor enim consequat iaculis. Curabitur pellentesque ante eu magna laoreet, et feugiat dui commodo. Vestibulum nec arcu at urna dapibus pretium. Donec leo elit, efficitur quis augue at, molestie vehicula metus. Nullam vulputate, enim eget ullamcorper luctus, dui sem efficitur risus, non consequat diam mauris sit amet leo. Mauris pulvinar sem sit amet iaculis maximus. Phasellus eget turpis sed leo eleifend scelerisque id nec neque. In hac habitasse platea dictumst. Sed nulla ligula, cursus eleifend gravida sed, sollicitudin ut nunc. Donec sagittis fringilla tellus, vitae facilisis elit dictum at. Duis venenatis sollicitudin dolor id interdum. Proin laoreet, turpis ac egestas mattis, lacus neque fringilla eros, eu dignissim neque nunc in massa. Curabitur et arcu fermentum, efficitur massa eu, ornare ex. Nulla pellentesque urna sit amet magna pellentesque, ac eleifend tortor hendrerit.
+        </p>
+    </div>
+    <div class="bx">
+        <div id="beef" class="beef"><h2>Beef</h2></div>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a elementum purus. Aenean id fermentum erat. Proin est est, cursus a velit mattis, dapibus rutrum ipsum. Donec porta nibh in diam vulputate, ac molestie sem ultricies. Etiam lacinia sodales ante, sodales pellentesque nibh feugiat sit amet. Ut venenatis diam a magna rhoncus, id finibus metus porttitor. Praesent quis metus dapibus, finibus ligula ac, ultrices ligula. Maecenas a ligula in ex pulvinar tempus. Donec a suscipit urna. Cras eget rutrum turpis. Curabitur sit amet est eu ipsum volutpat fermentum. Proin in pulvinar elit, nec auctor diam. Nam sit amet blandit purus. Maecenas aliquet eros ut ex tincidunt, nec interdum quam vulputate. Nulla gravida mauris ut odio laoreet, vitae pretium enim ultricies. Sed tincidunt aliquam dolor non ornare.
 
-       <section class="col-lg-4 col-md-12 col-xs-12">        
-        <div class="content3">
-           <h3 class="text-center" id="dishes3">Sushi</h3>
-           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.      
-           <p class="visible-xs"><a href="#top"><b>Back Top</b></a></p>
-        </div>
-      </section>
-    </div>      
-  </div>
+            Vivamus placerat viverra sagittis. Suspendisse lobortis mollis mauris, ac scelerisque arcu. Etiam id lacus porttitor enim consequat iaculis. Curabitur pellentesque ante eu magna laoreet, et feugiat dui commodo. Vestibulum nec arcu at urna dapibus pretium. Donec leo elit, efficitur quis augue at, molestie vehicula metus. Nullam vulputate, enim eget ullamcorper luctus, dui sem efficitur risus, non consequat diam mauris sit amet leo. Mauris pulvinar sem sit amet iaculis maximus. Phasellus eget turpis sed leo eleifend scelerisque id nec neque. In hac habitasse platea dictumst. Sed nulla ligula, cursus eleifend gravida sed, sollicitudin ut nunc. Donec sagittis fringilla tellus, vitae facilisis elit dictum at. Duis venenatis sollicitudin dolor id interdum. Proin laoreet, turpis ac egestas mattis, lacus neque fringilla eros, eu dignissim neque nunc in massa. Curabitur et arcu fermentum, efficitur massa eu, ornare ex. Nulla pellentesque urna sit amet magna pellentesque, ac eleifend tortor hendrerit.
+        </p>
+    </div>
+    <div class="bx">
+        <div id="sushi" class="sushi"><h2>Sushi</h2></div>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a elementum purus. Aenean id fermentum erat. Proin est est, cursus a velit mattis, dapibus rutrum ipsum. Donec porta nibh in diam vulputate, ac molestie sem ultricies. Etiam lacinia sodales ante, sodales pellentesque nibh feugiat sit amet. Ut venenatis diam a magna rhoncus, id finibus metus porttitor. Praesent quis metus dapibus, finibus ligula ac, ultrices ligula. Maecenas a ligula in ex pulvinar tempus. Donec a suscipit urna. Cras eget rutrum turpis. Curabitur sit amet est eu ipsum volutpat fermentum. Proin in pulvinar elit, nec auctor diam. Nam sit amet blandit purus. Maecenas aliquet eros ut ex tincidunt, nec interdum quam vulputate. Nulla gravida mauris ut odio laoreet, vitae pretium enim ultricies. Sed tincidunt aliquam dolor non ornare.
+
+            Vivamus placerat viverra sagittis. Suspendisse lobortis mollis mauris, ac scelerisque arcu. Etiam id lacus porttitor enim consequat iaculis. Curabitur pellentesque ante eu magna laoreet, et feugiat dui commodo. Vestibulum nec arcu at urna dapibus pretium. Donec leo elit, efficitur quis augue at, molestie vehicula metus. Nullam vulputate, enim eget ullamcorper luctus, dui sem efficitur risus, non consequat diam mauris sit amet leo. Mauris pulvinar sem sit amet iaculis maximus. Phasellus eget turpis sed leo eleifend scelerisque id nec neque. In hac habitasse platea dictumst. Sed nulla ligula, cursus eleifend gravida sed, sollicitudin ut nunc. Donec sagittis fringilla tellus, vitae facilisis elit dictum at. Duis venenatis sollicitudin dolor id interdum. Proin laoreet, turpis ac egestas mattis, lacus neque fringilla eros, eu dignissim neque nunc in massa. Curabitur et arcu fermentum, efficitur massa eu, ornare ex. Nulla pellentesque urna sit amet magna pellentesque, ac eleifend tortor hendrerit.
+        </p>
+    </div>
+</div>
         
-        <script src="js/jquery-1.11.3.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/script.js"></script>
+        <script src="bootstrap-3.4.1-dist\js\jquery-3.4.1.min.js"></script>
+        <script src="bootstrap-3.4.1-dist\js\bootstrap.min.js"></script>
         
  
         
