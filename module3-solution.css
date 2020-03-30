@@ -131,10 +131,16 @@ h1 {
         width: 45%;
         margin: 20px;
     }
+    #nav-list{
+        display: none;
+    }
 }
 @media (max-width:992px) {
     .bx {
         width: 100%;
+    }
+    #nav-list{
+        display: none;
     }
 }
 
