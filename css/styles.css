@@ -53,11 +53,6 @@ strong {
 dfn {
   font-style: italic;
 }
-p {
-    border: #286090;
-    border-style: double;
-    padding: 10px;
-}
 h1 {
   margin: .67em 0;
   font-size: 2em;
@@ -186,6 +181,7 @@ td,
 th {
   padding: 0;
 }
+
 /*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
 @media print {
   *,
